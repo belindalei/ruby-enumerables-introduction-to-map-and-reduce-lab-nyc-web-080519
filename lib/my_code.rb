@@ -59,11 +59,5 @@ end
 #  reduce_to_any_true returns false when no truthy value is present
 
 def reduce_to_any_true(source_array)
-   source_array.each {|n|
-    if n != false || nil
-      return true 
-    else
-      return false 
-   end 
-   }
+   source_array.any? 
 end 
