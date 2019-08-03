@@ -60,7 +60,7 @@ end
 
 def reduce_to_any_true(source_array)
    source_array.each {|n|
-    if n != false || 0 || "" || '' || null || undefined || NaN || nil
+    if n != false || nil
       return true 
     else
       return false 
